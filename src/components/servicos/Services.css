@@ -82,6 +82,7 @@ section {
   font-size: 24px;
   border: none;
   cursor: pointer;
+  color: #0c0c1d;
 }
 .services .listContainer {
   flex: 2;
@@ -187,6 +188,7 @@ section {
   background-color: orange;
   font-size: 24px;
   border: none;
+  color: #0c0c1d;
 }
 .servicesMobile .listContainerMobile {
   display: flex;
