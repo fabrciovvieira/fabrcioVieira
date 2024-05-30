@@ -3,4 +3,28 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "DM sans", sans-serif;
+}
+
+html {
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #0c0c1d;
+  color: lightgray;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+section {
+  scroll-snap-align: center;
+  height: 100vh;
 }/*# sourceMappingURL=index.css.map */
