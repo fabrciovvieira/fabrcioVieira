@@ -1,0 +1,227 @@
+@import "../../App.scss";
+
+@media screen and (min-width: 500px) {
+    .skillsMobile, .containerSkillMobile, .expanded-cardMobile {
+        display: none;
+    }
+}
+
+.containerSkill {
+    position: relative;
+    height: 100vh;
+    @include mobile {
+        height: unset;
+    }
+
+    .slidingTextContainerSkill {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        font-size: 40vh;
+        white-space: nowrap;
+        color: #ffffff06;
+        font-weight: bold;
+        z-index: -2;
+        width: 100%;
+        text-align: center;
+
+        @include laptop {
+            font-size: 20vh;
+        }
+    }
+
+    h1 {
+        padding: 50px;
+        text-align: center;
+        color: orange;
+        font-size: 76px;
+
+        @include laptop {
+            padding: 60px;
+        }
+
+        @include mobile {
+            display: none;
+        }
+    }
+}
+
+.skills {
+    display: flex;
+    max-width: 1080px;
+    justify-content: center;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+    margin: auto;
+
+    @include mobile {
+        display: none;
+    }
+
+    .topics {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 25px;
+        font-size: 23px;
+
+        @include mobile {
+            display: none;
+        }
+    }
+
+    h2 {
+        border: 1px solid orange;
+        padding: 30px;
+        border-radius: 8px;
+        cursor: pointer;
+    }
+
+    .descricaoTopico {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        align-items: center;
+        font-size: 62px;
+        cursor: pointer;
+
+        @include mobile {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            flex: 30;
+        }
+
+        .item {
+            width: 100px;
+            height: 100px;
+            border-radius: 7px;
+            background-color: orange;
+            border: none;
+            display: flex;
+            justify-content: center;
+            color: #0c0c1d;
+            align-items: center;
+        }
+    }
+}
+
+.containerSkillMobile {
+    h1 {
+        padding: 50px;
+        text-align: center;
+        color: orange;
+        font-size: 76px;
+
+        @include mobile {
+            font-size: 36px;
+        }
+    }
+}
+
+.skillsMobile {
+    @include mobile {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        min-width: 300px;
+        gap: 10px;
+        padding: 30px;
+    }
+
+    .itemMobile {
+        width: 90px;
+        height: 90px;
+        border-radius: 7px;
+        background-color: orange;
+        border: none;
+        display: flex;
+        justify-content: center;
+        color: #0c0c1d;
+        align-items: center;
+        font-size: 60px;
+        margin: auto;
+        cursor: pointer;
+    }
+}
+
+.expanded-card {
+    position: fixed;
+    z-index: 999;
+    width: 50%;
+    max-width: 600px;
+    top: 50%;
+    padding: 32px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background: orange;
+    color: #0c0c1d;
+    border: 1px solid orange;
+
+    .expendTexto {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 10px;
+
+        h3 {
+            font-size: 23px;
+        }
+
+        p {
+            text-align: center;
+        }
+
+        button {
+            padding: 12px 24px;
+            width: 200px;
+            margin: auto;
+            border: none;
+            background-color: #0c0c1d;
+            color: orange;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    }
+}
+
+.expanded-cardMobile {
+    position: fixed;
+    z-index: 999;
+    display: flex;  
+    top: 30%;
+    width: 84%;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background: orange;
+    color: #0c0c1d;
+    border: 1px solid orange;
+
+
+    .expendTextoMobile {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 10px;
+
+        h3 {
+            font-size: 23px;
+        }
+
+        p {
+            text-align: center;
+        }
+
+        button {
+            padding: 12px 24px;
+            width: 200px;
+            margin: auto;
+            border: none;
+            background-color: #0c0c1d;
+            color: orange;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    }
+}

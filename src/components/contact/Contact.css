@@ -1,0 +1,157 @@
+html {
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #0c0c1d;
+  color: lightgray;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+section {
+  scroll-snap-align: center;
+  height: 100vh;
+}
+
+.contact {
+  height: 100%;
+  max-width: 1080px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  z-index: 0;
+}
+@media (max-width: 475px) {
+  .contact {
+    flex-direction: column;
+    width: 100%;
+    padding: 10px;
+    gap: 10px;
+  }
+}
+@media (max-width: 1024px) {
+  .contact {
+    flex-direction: column;
+    width: 100%;
+    padding: 10px;
+    gap: 10px;
+  }
+}
+.contact .textContainer {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+@media (max-width: 1024px) {
+  .contact .textContainer {
+    gap: 10px;
+    text-align: center;
+    align-items: center;
+    margin-top: 60px;
+  }
+}
+.contact .textContainer h1 {
+  font-size: 100px;
+  line-height: 80px;
+}
+@media (max-width: 475px) {
+  .contact .textContainer h1 {
+    font-size: 36px;
+    line-height: unset;
+    margin-top: 10px;
+  }
+}
+.contact .textContainer span {
+  font-weight: 100;
+}
+.contact .formContainer {
+  flex: 1;
+  position: relative;
+  width: 100%;
+  padding: 10px;
+  z-index: 10;
+}
+.contact .formContainer .wppSvg {
+  stroke: orange;
+  position: absolute;
+  margin: auto;
+  z-index: -1;
+}
+.contact .formContainer form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+@media (max-width: 1024px) {
+  .contact .formContainer form {
+    gap: 10px;
+  }
+}
+.contact .formContainer form input, .contact .formContainer form textarea {
+  padding: 20px;
+  background-color: transparent;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  resize: none;
+  color: #fff;
+}
+.contact .formContainer form input[type=submit] {
+  background-color: orange;
+  padding: 20px;
+  border: 1px solid transparent;
+  font-weight: 500;
+  font-size: 20px;
+  cursor: pointer;
+  color: #000;
+}
+@media (max-width: 1024px) {
+  .contact .formContainer form .svgIconMobile {
+    width: 60% !important;
+  }
+}
+
+.rodape {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: -5rem;
+  gap: 10px;
+}
+@media (max-width: 1024px) {
+  .rodape {
+    display: none;
+  }
+}
+.rodape .sociaisFooter {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  font-size: 30px;
+  align-items: center;
+}
+.rodape .sociaisFooter .icone {
+  cursor: pointer;
+}
+.rodape .sociaisFooter .icone:hover {
+  transform: translateY(-10px);
+  scale: 1.5;
+  transition: all 0.4s ease-in-out;
+}
+.rodape .register {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 70%;
+}/*# sourceMappingURL=Contact.css.map */

@@ -1,0 +1,239 @@
+html {
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #0c0c1d;
+  color: lightgray;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+section {
+  scroll-snap-align: center;
+  height: 100vh;
+}
+
+@media screen and (min-width: 500px) {
+  .skillsMobile, .containerSkillMobile, .expanded-cardMobile {
+    display: none;
+  }
+}
+.containerSkill {
+  position: relative;
+  height: 100vh;
+}
+@media (max-width: 475px) {
+  .containerSkill {
+    height: unset;
+  }
+}
+.containerSkill .slidingTextContainerSkill {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  font-size: 40vh;
+  white-space: nowrap;
+  color: rgba(255, 255, 255, 0.0235294118);
+  font-weight: bold;
+  z-index: -2;
+  width: 100%;
+  text-align: center;
+}
+@media (max-width: 1024px) {
+  .containerSkill .slidingTextContainerSkill {
+    font-size: 20vh;
+  }
+}
+.containerSkill h1 {
+  padding: 50px;
+  text-align: center;
+  color: orange;
+  font-size: 76px;
+}
+@media (max-width: 1024px) {
+  .containerSkill h1 {
+    padding: 60px;
+  }
+}
+@media (max-width: 475px) {
+  .containerSkill h1 {
+    display: none;
+  }
+}
+
+.skills {
+  display: flex;
+  max-width: 1080px;
+  justify-content: center;
+  flex-direction: column;
+  gap: 50px;
+  align-items: center;
+  margin: auto;
+}
+@media (max-width: 475px) {
+  .skills {
+    display: none;
+  }
+}
+.skills .topics {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  font-size: 23px;
+}
+@media (max-width: 475px) {
+  .skills .topics {
+    display: none;
+  }
+}
+.skills h2 {
+  border: 1px solid orange;
+  padding: 30px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.skills .descricaoTopico {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  align-items: center;
+  font-size: 62px;
+  cursor: pointer;
+}
+@media (max-width: 475px) {
+  .skills .descricaoTopico {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    flex: 30;
+  }
+}
+.skills .descricaoTopico .item {
+  width: 100px;
+  height: 100px;
+  border-radius: 7px;
+  background-color: orange;
+  border: none;
+  display: flex;
+  justify-content: center;
+  color: #0c0c1d;
+  align-items: center;
+}
+
+.containerSkillMobile h1 {
+  padding: 50px;
+  text-align: center;
+  color: orange;
+  font-size: 76px;
+}
+@media (max-width: 475px) {
+  .containerSkillMobile h1 {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 475px) {
+  .skillsMobile {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    min-width: 300px;
+    gap: 10px;
+    padding: 30px;
+  }
+}
+.skillsMobile .itemMobile {
+  width: 90px;
+  height: 90px;
+  border-radius: 7px;
+  background-color: orange;
+  border: none;
+  display: flex;
+  justify-content: center;
+  color: #0c0c1d;
+  align-items: center;
+  font-size: 60px;
+  margin: auto;
+  cursor: pointer;
+}
+
+.expanded-card {
+  position: fixed;
+  z-index: 999;
+  width: 50%;
+  max-width: 600px;
+  top: 50%;
+  padding: 32px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  background: orange;
+  color: #0c0c1d;
+  border: 1px solid orange;
+}
+.expanded-card .expendTexto {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+}
+.expanded-card .expendTexto h3 {
+  font-size: 23px;
+}
+.expanded-card .expendTexto p {
+  text-align: center;
+}
+.expanded-card .expendTexto button {
+  padding: 12px 24px;
+  width: 200px;
+  margin: auto;
+  border: none;
+  background-color: #0c0c1d;
+  color: orange;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.expanded-cardMobile {
+  position: fixed;
+  z-index: 999;
+  display: flex;
+  top: 30%;
+  width: 84%;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  background: orange;
+  color: #0c0c1d;
+  border: 1px solid orange;
+}
+.expanded-cardMobile .expendTextoMobile {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+}
+.expanded-cardMobile .expendTextoMobile h3 {
+  font-size: 23px;
+}
+.expanded-cardMobile .expendTextoMobile p {
+  text-align: center;
+}
+.expanded-cardMobile .expendTextoMobile button {
+  padding: 12px 24px;
+  width: 200px;
+  margin: auto;
+  border: none;
+  background-color: #0c0c1d;
+  color: orange;
+  border-radius: 4px;
+  cursor: pointer;
+}/*# sourceMappingURL=Skills.css.map */
