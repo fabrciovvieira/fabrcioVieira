@@ -1,7 +1,9 @@
 import {FaInstagram, FaWhatsapp, FaLinkedin} from 'react-icons/fa'
 import './Contact.scss'
 import { useRef, useState, useEffect } from "react";
-import { motion, useInView } from "framer-motion";
+import { useInView } from "framer-motion";
+import { motion } from "framer-motion";
+
 import emailjs from '@emailjs/browser';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
