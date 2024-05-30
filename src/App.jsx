@@ -1,6 +1,6 @@
 import './App.scss'
 import React from 'react'
-// import Contact from './components/contact/Contact'
+import Contact from './components/contact/Contact'
 import Hero from './components/hero/Hero'
 import NavBar from './components/navbar/NavBar'
 import Paralax from './components/paralax/Paralax'
@@ -28,9 +28,9 @@ function App() {
         <Skills />
       </section>
         <Portfolio/>
-      {/* <section id='Contato'>
+      <section id='Contato'>
         <Contact />
-      </section> */}
+      </section>
 
       <SpeedInsights />
     </>
