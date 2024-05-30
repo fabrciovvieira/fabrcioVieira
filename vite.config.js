@@ -7,7 +7,7 @@ import react from '@vitejs/plugin-react'
 export default {
   build: {
     rollupOptions: {
-      external: ['@vercel/speed-insights/react', 'framer-motion']
+      external: ['framer-motion']
     }
   }
 }
