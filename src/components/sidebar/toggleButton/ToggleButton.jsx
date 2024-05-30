@@ -1,6 +1,6 @@
 import { motion } from "framer-motion"
 import { IoMdClose, IoMdMenu } from "react-icons/io";
-
+import React from 'react'
 
 const ToggleButton = ({ setIsOpen }) => {
   return (

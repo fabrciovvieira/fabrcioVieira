@@ -1,6 +1,6 @@
 import {FaInstagram, FaWhatsapp, FaLinkedin} from 'react-icons/fa'
 import './Contact.scss'
-import { useRef, useState, useEffect } from "react";
+import React, { useRef, useState, useEffect } from "react";
 import { useInView } from "framer-motion";
 import { motion } from "framer-motion";
 

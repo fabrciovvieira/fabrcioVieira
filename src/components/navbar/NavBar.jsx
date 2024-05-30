@@ -1,7 +1,7 @@
 import {FaInstagram, FaWhatsapp, FaGithub, FaLinkedin} from 'react-icons/fa'
 import { easeInOut, motion, useInView} from 'framer-motion'
 import './NavBar.scss'
-
+import React from 'react'
 
 import logo from '../../assets/logo/logo.png'
 import SideBar from '../sidebar/SideBar'

@@ -5,7 +5,7 @@ import {motion, useInView} from 'framer-motion'
 import './Services.scss'
 import titleImg from '../../assets/title.png'
 
-
+import React from 'react'
 
 const variants = {
     initial: {

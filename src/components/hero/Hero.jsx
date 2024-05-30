@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { PiMouseScrollThin } from "react-icons/pi";
 import './Hero.scss'
-
+import React from 'react'
 
 import fotoHero from '../../assets/fotoHero.png'
 
