@@ -4,7 +4,7 @@ import './Hero.scss'
 
 
 import fotoHero from '../../assets/fotoHero.png'
-import { animate, stagger } from "framer-motion";
+
 
 const textVariants = {
     initial: {
