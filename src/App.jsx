@@ -1,4 +1,5 @@
 import './App.scss'
+import React from 'react'
 import Contact from './components/contact/Contact'
 import Hero from './components/hero/Hero'
 import NavBar from './components/navbar/NavBar'
